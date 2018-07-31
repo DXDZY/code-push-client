@@ -5,7 +5,7 @@
 * 配置RN
 * 发布命令
 ---
-##前期准备
+# 前期准备
 1. 项目中安装`react-native-code-push`
 ```
 npm install --save react-native-code-push@latest
@@ -61,7 +61,7 @@ Staging|r4SNF3BL4vkgP4UK2gMWx7Iibh4S4ksvOXqog|No updates released|No installs re
 7. 查看其他命令
 >code-push --h
 ---
-#配置Android
+# 配置Android
 1. 修改android-buildTypes节点，在`android/app/build.gradle`
 ```
 buildTypes {
@@ -106,7 +106,7 @@ defaultConfig {
 安装不同版本时，如果提示错误`com.codepushclient signatures do not match the previously installed version`，将模拟器app卸载后再安装
 * `cd android && ./gradlew assembleRelease`打包
 ---
-#配置IOS
+# 配置IOS
 1. xcode打开项目Project中选中项目->选择Info标签->选择`Configurations `节点下的`+`，选择`选择Duplicate "Release" Configaration`输入`Staging`
 ![Info](https://upload-images.jianshu.io/upload_images/7999439-23e962b89bbf8e5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 2. 选择`BuildSettings`标签->点击`+`选择`Add User-Defined Setting`->输入`CODEPUSH_KEY (可随意)`->填写`deployment key`
@@ -120,7 +120,7 @@ defaultConfig {
 ![image.png](https://upload-images.jianshu.io/upload_images/7999439-27d295bedac1f49c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ---
-#配置RN
+# 配置RN
 ```
 /**
  * Sample React Native App
@@ -274,7 +274,7 @@ const config = {
 export default config;
 ```
 ---
-#发布命令
+# 发布命令
 1. 更新测试包（默认更新的是`Staging`环境）
 ```
 //更新ios
