@@ -5,7 +5,7 @@
 * 配置RN
 * 发布命令
 ---
-#前期准备
+##前期准备
 1. 项目中安装`react-native-code-push`
 ```
 npm install --save react-native-code-push@latest
